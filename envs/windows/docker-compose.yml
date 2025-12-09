@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  windows-mcp:
+    image: yuzhounie/decodingtrust-windows
+    container_name: windows-server
+    environment:
+      VERSION: "11"
+      SNAPSHOT: "Y"
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "${WEB_MANAGEMENT_PORT:-8006}:8006"      # Web-based management interface
+      - "3389:3389/tcp"  # RDP
+      - "3389:3389/udp"  # RDP
+      - "${MCP_SERVICE_PORT:-8005}:8005"      # mcp service port
+    volumes:
+      - ./windows:/storage
+      - ./Windows-MCP:/shared/Windows-MCP
+    restart: always
+    stop_grace_period: 2m
