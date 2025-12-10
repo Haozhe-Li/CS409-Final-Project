@@ -19,3 +19,4 @@ A Twitter Sandbox for testing your AI Agent, this part is done by Haozhe Li
 
 ## Cite
 Vercel V0 is used for prototyping UI: [See log](https://v0.app/chat/twitter-sandbox-i2APoa4C9Hj?ref=WQXNIL)
+I’m also using GitHub Copilot for code completion and debugging, but I haven’t found a way to export the chat logs directly. If anyone needs them, please let me know.
