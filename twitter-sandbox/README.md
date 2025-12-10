@@ -1,6 +1,6 @@
 # Twitter Sandbox
 
-A Twitter Sandbox for testing your AI Agent.
+A Twitter Sandbox for testing your AI Agent, this part is done by Haozhe Li
 
 ## Local Usage
 
@@ -16,3 +16,6 @@ A Twitter Sandbox for testing your AI Agent.
 3. Copy and paste [Python Script](create_twitter_langflow.py) into langflow to create tool
 4. Paste your JWT in langflow and connect tool agent
 5. Have fun with your AI Agent
+
+## Cite
+Vercel V0 is used for prototyping UI: [See log](https://v0.app/chat/twitter-sandbox-i2APoa4C9Hj?ref=WQXNIL)
